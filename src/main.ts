@@ -1,15 +1,10 @@
 import './style.scss';
+import { Menu } from './components/Menu';
 import * as tools from './tools';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML =/* html */`
 <h1>Info Site</h1>
-<nav>
-	<ul>
-		<li><a href="welcome" class="active">Welcome</a></li>
-		<li><a href="info">Info</a></li>
-		<li><a href="about">About</a></li>
-	</ul>
-</nav>
+${Menu()}
 <p>Welcome to this site.</p>
 <p>${tools.getCurrentUrl()}</p>
 `;
