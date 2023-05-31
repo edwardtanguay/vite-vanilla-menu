@@ -7,6 +7,19 @@ const pageNames = ['Welcome', 'Info', 'About'];
 
 const currentPageIdCode = tools.getCurrentPageIdCode();
 
+export const getCurrentPage = () => {
+	switch (currentPageIdCode) {
+		case 'welcome':
+			return PageWelcome();
+		case 'info':
+			return PageInfo();
+		case 'about':
+			return PageAbout();
+		default:
+			return '404 Error';
+	}
+}
+
 export const getMenu = () => {
 
 	const getMenuClass = (pageName: string) => {
@@ -23,17 +36,4 @@ export const getMenu = () => {
 		${pageNames.map(pageName => `<li><a href="${pageName.toLowerCase()}"${getMenuClass(pageName)}>${pageName}</a></li>`).join('')}
 	</ul>
 `;
-}
-
-export const getCurrentPage = () => {
-	switch (currentPageIdCode) {
-		case 'welcome':
-			return PageWelcome();
-		case 'info':
-			return PageInfo();
-		case 'about':
-			return PageAbout();
-		default:
-			return '404 Error';
-	}
 }
