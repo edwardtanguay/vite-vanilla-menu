@@ -1,0 +1,29 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #333;
+	color: #ccc;
+	font-family: sans-serif;
+	padding: 1rem;
+
+	h1 {
+		color: rgb(204, 168, 101);
+		margin-bottom: .5rem;
+	}
+
+	nav {
+		margin-bottom: 1rem;
+		background-color: #444;
+		padding: .5rem;
+
+		ul {
+			display: flex;
+			list-style-type: none;
+			gap: 1rem;
+		}
+	}
+}
