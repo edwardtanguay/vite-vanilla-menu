@@ -1,9 +1,14 @@
 import './styles/main.scss';
-import { Menu } from './components/Menu';
-import { Router } from './Router';
+import { getMenu, getCurrentPage } from './Router';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML =/* html */`
-<h1>Info Site</h1>
-${Menu()}
-${Router()}
+<header>
+	<h1>Info Site</h1>
+	<nav>
+		${getMenu()}
+	</nav>
+</header>
+<main>
+	${getCurrentPage()}
+</main>
 `;
