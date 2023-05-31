@@ -1,15 +1,23 @@
 import * as tools from './tools';
 
+const pageNames = ['Welcome', 'Info', 'About'];
+
 const currentPageIdCode = tools.getCurrentPageIdCode();
 
-console.log(currentPageIdCode);
-
 export const getMenu = () => {
+
+	const getMenuClass = (pageName: string) => {
+		const pageIdCode = pageName.toLowerCase();
+		if (pageIdCode === currentPageIdCode) {
+			return ` class="active"`
+		} else {
+			return '';
+		}
+	}
+
 	return /*html*/`
 	<ul>
-		<li><a href="welcome" class="active">Welcome</a></li>
-		<li><a href="info">Info</a></li>
-		<li><a href="about">About</a></li>
+		${pageNames.map(pageName => `<li><a href="${pageName.toLowerCase()}"${getMenuClass(pageName)}>${pageName}</a></li>`).join('')}
 	</ul>
 `;
 }
