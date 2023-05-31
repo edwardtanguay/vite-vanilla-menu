@@ -1,4 +1,4 @@
-import './style.scss';
+import './styles/main.scss';
 import { Menu } from './components/Menu';
 import * as tools from './tools';
 
