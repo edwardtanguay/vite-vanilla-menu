@@ -4,6 +4,8 @@ This is a multi-page HTML/CSS/JavaScript site created with Vite Vanilla option. 
 
 ![grafik](https://starters.tanguay.eu/images/starters/darkViteVanillaMenu.png)
 
+![grafik](https://github.com/edwardtanguay/vite-vanilla-menu/assets/446574/917ec388-fa98-480a-98fb-4f1ab87997e2)
+
 ## features
 
 - built with **Vite** (Vanilla/TypeScript)
