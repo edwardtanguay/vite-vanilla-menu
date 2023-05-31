@@ -24,6 +24,17 @@ body {
 			display: flex;
 			list-style-type: none;
 			gap: 1rem;
+
+			li {
+				a {
+					color: #aaa;
+					text-decoration: none;
+
+					&.active {
+						color: rgb(216, 216, 101);
+					}
+				}
+			}
 		}
 	}
 }
