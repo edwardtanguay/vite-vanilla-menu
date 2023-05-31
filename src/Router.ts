@@ -5,7 +5,7 @@ import { PageAbout } from './pages/PageAbout';
 
 const pageNames = ['Welcome', 'Info', 'About'];
 
-const currentPageIdCode = tools.getCurrentPageIdCode();
+const currentPageIdCode = getSmartCurrentPageId();
 
 export const getCurrentPage = () => {
 	switch (currentPageIdCode) {
@@ -22,7 +22,6 @@ export const getCurrentPage = () => {
 }
 
 export const getMenu = () => {
-
 	const getMenuClass = (pageName: string) => {
 		const pageIdCode = pageName.toLowerCase();
 		if (pageIdCode === currentPageIdCode) {
@@ -37,4 +36,10 @@ export const getMenu = () => {
 		${pageNames.map(pageName => `<li><a href="${pageName.toLowerCase()}"${getMenuClass(pageName)}>${pageName}</a></li>`).join('')}
 	</ul>
 `;
+}
+
+function getSmartCurrentPageId() {
+	let currentPageIdCode = tools.getCurrentPageIdCode();
+	currentPageIdCode = currentPageIdCode === '' ? pageNames[0].toLowerCase() : currentPageIdCode;
+	return currentPageIdCode;
 }
