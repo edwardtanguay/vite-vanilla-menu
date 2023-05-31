@@ -9,6 +9,7 @@ const currentPageIdCode = tools.getCurrentPageIdCode();
 
 export const getCurrentPage = () => {
 	switch (currentPageIdCode) {
+		case '':
 		case 'welcome':
 			return PageWelcome();
 		case 'info':
