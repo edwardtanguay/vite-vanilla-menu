@@ -22,6 +22,7 @@ This is a multi-page HTML/CSS/JavaScript site created with Vite Vanilla option. 
 - open VSCode in that directory (`code .`)
 - `npm i`
 - `npm run dev`
+- `git init -b dev`
 
 ## more starters, templates and frameworks
 
