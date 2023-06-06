@@ -21,6 +21,11 @@ export const getCurrentPage = () => {
 	}
 }
 
+const getPageIdCode = (pageName: string) => {
+	pageName = tools.cleanCharactersToAscii(pageName);
+	return pageName.toLowerCase();
+}
+
 export const getMenu = () => {
 	const getMenuClass = (pageName: string) => {
 		const pageIdCode = pageName.toLowerCase();
@@ -32,11 +37,14 @@ export const getMenu = () => {
 	}
 
 	return /*html*/`
-	<ul>
-		${pageNames.map(pageName => `<li><a href="${pageName.toLowerCase()}"${getMenuClass(pageName)}>${pageName}</a></li>`).join('')}
-	</ul>
+	<nav class="menu">
+		<ul>
+			${pageNames.map(pageName => `<li><a href="${getPageIdCode(pageName)}"${getMenuClass(pageName)}>${pageName}</a></li>`).join('')}
+		</ul>
+	</nav>
 `;
 }
+
 
 function getSmartCurrentPageId() {
 	let currentPageIdCode = tools.getCurrentPageIdCode();
