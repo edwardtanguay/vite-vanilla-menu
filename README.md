@@ -8,29 +8,33 @@ This is a multi-page HTML/CSS/JavaScript site created with Vite Vanilla option. 
 
 ## Updates
 
+### 2023-06-07
+
+- router now loads a 404 page (`Page404.ts`)
+
 ### 2023-06-06
 
--   handles spaces and special (German) characters in page names
--   `nav` moved into menu component
--   `<div class="page ...">` wrappers on all pages
+- handles spaces and special (German) characters in page names
+- `nav` moved into menu component
+- `<div class="page ...">` wrappers on all pages
 
 ## features
 
--   built with **Vite** (Vanilla/TypeScript)
--   **multi-page** menu, editable in `Router.ts`
--   dark layout
--   TypeScript
--   one **Sass** file
--   _good for developers who don't yet have React skills but who want to make multi-page sites with a modern React-like framework that has npm packages, can load JSON files from the file system, and you can easily publish at Vercel, etc._
+- built with **Vite** (Vanilla/TypeScript)
+- **multi-page** menu, editable in `Router.ts`
+- dark layout
+- TypeScript
+- one **Sass** file
+- _good for developers who don't yet have React skills but who want to make multi-page sites with a modern React-like framework that has npm packages, can load JSON files from the file system, and you can easily publish at Vercel, etc._
 
 ## install
 
--   download zip
--   copy all files to new directory, e.g. `/home/yourname/projects/site001`
--   open VSCode in that directory (`code .`)
--   `npm i`
--   `npm run dev`
--   `git init -b dev`
+- download zip
+- copy all files to new directory, e.g. `/home/yourname/projects/site001`
+- open VSCode in that directory (`code .`)
+- `npm i`
+- `npm run dev`
+- `git init -b dev`
 
 ## more starters, templates and frameworks
 
