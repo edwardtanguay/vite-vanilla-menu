@@ -29,7 +29,7 @@ const getPageIdCode = (pageName: string) => {
 
 export const getMenu = () => {
 	const getMenuClass = (pageName: string) => {
-		const pageIdCode = pageName.toLowerCase();
+		const pageIdCode = tools.cleanCharactersToAscii(pageName.toLowerCase());
 		if (pageIdCode === currentPageIdCode) {
 			return ` class="active"`
 		} else {
