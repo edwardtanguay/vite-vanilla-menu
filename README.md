@@ -8,6 +8,10 @@ This is a multi-page HTML/CSS/JavaScript site created with Vite Vanilla option. 
 
 ## Updates
 
+### 2023-06-14
+
+- fixed bug: default page now works
+
 ### 2023-06-07
 
 - router now loads a 404 page (`Page404.ts`)

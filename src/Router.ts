@@ -4,14 +4,15 @@ import { PageInfo } from './pages/PageInfo';
 import { PageAbout } from './pages/PageAbout';
 import { Page404 } from './pages/Page404';
 
-const pageNames = ['Welcome', 'Info', 'About'];
+const pageNames = ['Über uns', 'Info', 'About'];
 
 const currentPageIdCode = getSmartCurrentPageId();
 
 export const getCurrentPage = () => {
+	console.log(currentPageIdCode);
 	switch (currentPageIdCode) {
 		case '':
-		case 'welcome':
+		case 'ueberuns':
 			return PageWelcome();
 		case 'info':
 			return PageInfo();
@@ -49,6 +50,6 @@ export const getMenu = () => {
 
 function getSmartCurrentPageId() {
 	let currentPageIdCode = tools.getCurrentPageIdCode();
-	currentPageIdCode = currentPageIdCode === '' ? pageNames[0].toLowerCase() : currentPageIdCode;
+	currentPageIdCode = currentPageIdCode === '' ? tools.cleanCharactersToAscii(pageNames[0].toLowerCase()) : currentPageIdCode;
 	return currentPageIdCode;
 }
