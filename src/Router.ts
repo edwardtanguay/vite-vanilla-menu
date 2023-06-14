@@ -4,15 +4,13 @@ import { PageInfo } from './pages/PageInfo';
 import { PageAbout } from './pages/PageAbout';
 import { Page404 } from './pages/Page404';
 
-const pageNames = ['Über uns', 'Info', 'About'];
+const pageNames = ['Welcome', 'Info', 'About'];
 
 const currentPageIdCode = getSmartCurrentPageId();
 
 export const getCurrentPage = () => {
-	console.log(currentPageIdCode);
 	switch (currentPageIdCode) {
-		case '':
-		case 'ueberuns':
+		case 'welcome':
 			return PageWelcome();
 		case 'info':
 			return PageInfo();
