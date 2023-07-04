@@ -259,17 +259,18 @@ article img, section img {
 
 /* footer section */
 
-footer section {
-    display: inline-block;
-    padding: 30px;
-}
 
 footer {
     background-color: #000000c8;
     color: #fff;
     height: 80px;
-}
 
-footer a {
-    color: #fff;
+    section {
+        display: inline-block;
+        padding: 30px;
+    }
+
+    a {
+        color: #fff;
+    }
 }
