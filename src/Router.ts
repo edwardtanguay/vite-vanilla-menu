@@ -1,53 +1,70 @@
-import * as tools from './tools';
-import { PageWelcome } from './pages/PageWelcome';
-import { PageInfo } from './pages/PageInfo';
-import { PageAbout } from './pages/PageAbout';
-import { Page404 } from './pages/Page404';
+import * as tools from "./tools";
 
-const pageNames = ['Welcome', 'Info', 'About'];
+import { Page404 } from "./pages/Page404";
+import { PageWillkommen } from "./pages/PageWillkommen";
+import { PageAlternativen } from "./pages/PageAlternativen";
+import { PageBlog } from "./pages/PageBlog";
+import { PageLego } from "./pages/PageLego";
+import { PageProjekte } from "./pages/PageProjekte";
+
+const pageNames = ["Willkommen", "Lego", "Alternativen", "Projekte", "Blog"];
 
 const currentPageIdCode = getSmartCurrentPageId();
 
+
 export const getCurrentPage = () => {
-	switch (currentPageIdCode) {
-		case 'welcome':
-			return PageWelcome();
-		case 'info':
-			return PageInfo();
-		case 'about':
-			return PageAbout();
-		default:
-			return Page404();
-	}
-}
+  switch (currentPageIdCode) {
+    case "willkommen":
+      return PageWillkommen();
+    case "lego":
+      return PageLego();
+    case "alternativen":
+      return PageAlternativen();
+    case "projekte":
+      return PageProjekte();
+    case "blog":
+      return PageBlog();
+    default:
+      return Page404();
+  }
+};
 
 const getPageIdCode = (pageName: string) => {
-	pageName = tools.cleanCharactersToAscii(pageName);
-	return pageName.toLowerCase();
-}
+  pageName = tools.cleanCharactersToAscii(pageName);
+  return pageName.toLowerCase();
+};
 
 export const getMenu = () => {
-	const getMenuClass = (pageName: string) => {
-		const pageIdCode = tools.cleanCharactersToAscii(pageName.toLowerCase());
-		if (pageIdCode === currentPageIdCode) {
-			return ` class="active"`
-		} else {
-			return '';
-		}
-	}
+  const getMenuClass = (pageName: string) => {
+    const pageIdCode = tools.cleanCharactersToAscii(pageName.toLowerCase());
+    if (pageIdCode === currentPageIdCode) {
+      return ` class="active"`;
+    } else {
+      return "";
+    }
+  };
 
-	return /*html*/`
+  return /*html*/ `
 	<nav class="menu">
 		<ul>
-			${pageNames.map(pageName => `<li><a href="${getPageIdCode(pageName)}"${getMenuClass(pageName)}>${pageName}</a></li>`).join('')}
+			${pageNames
+        .map(
+          (pageName) =>
+            `<li><a href="${getPageIdCode(pageName)}"${getMenuClass(
+              pageName
+            )}>${pageName}</a></li>`
+        )
+        .join("")}
 		</ul>
 	</nav>
 `;
-}
-
+};
 
 function getSmartCurrentPageId() {
-	let currentPageIdCode = tools.getCurrentPageIdCode();
-	currentPageIdCode = currentPageIdCode === '' ? tools.cleanCharactersToAscii(pageNames[0].toLowerCase()) : currentPageIdCode;
-	return currentPageIdCode;
+  let currentPageIdCode = tools.getCurrentPageIdCode();
+  currentPageIdCode =
+    currentPageIdCode === ""
+      ? tools.cleanCharactersToAscii(pageNames[0].toLowerCase())
+      : currentPageIdCode;
+  return currentPageIdCode;
 }

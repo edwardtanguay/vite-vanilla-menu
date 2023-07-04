@@ -19,14 +19,8 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML =/* html */`
         </a>
     </figure>
 
-    <nav>
-        <ul>
-            <li><a href="./pages/lego.html">Lego</a></li>
-            <li><a href="./pages/alternativen.html">Lego-Set-Alternativen</a></li>
-            <li><a href="./pages/projekte.html">Klemmbaustein-Projekte</a></li>
-            <li><a href="./pages/blog.html">Blog</a></li>
-        </ul>
-    </nav>
+    ${getMenu()}
+
 </header>
 <main>
 	${getCurrentPage()}
