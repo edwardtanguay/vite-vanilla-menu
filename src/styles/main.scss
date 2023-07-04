@@ -224,15 +224,15 @@ section img {
   right: 12%;
   float: right;
   position: fixed;
-}
 
-.fixed-top a {
-  text-decoration: none;
-  padding: 10px;
-  color: #000;
-  font-weight: bold;
-  background-color: #fffb00;
-  border: 2px solid #000;
+  a {
+    text-decoration: none;
+    padding: 10px;
+    color: #000;
+    font-weight: bold;
+    background-color: #fffb00;
+    border: 2px solid #000;
+  }
 }
 
 /* Textgestaltung der Projekt-Seite */
