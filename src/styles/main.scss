@@ -33,32 +33,30 @@ footer {
 header {
   margin-top: 50px;
   padding-top: 15px;
-}
 
-header section,
-header figure:nth-of-type(1) {
-  text-align: center;
-  margin-bottom: 0;
-}
+  section,
+  figure:nth-of-type(1) {
+    text-align: center;
+    margin-bottom: 0;
 
-header figure:nth-of-type(1) img {
-  height: 200px;
-}
+    img {
+      height: 200px;
+    }
+  }
 
-header h1 {
-  font-size: 3.5em;
-  font-family: "delta";
-}
+  h1 {
+    font-size: 3.5em;
+    font-family: "delta";
+  }
 
-/* logo */
+  figure:nth-of-type(2) {
+    float: left;
+    margin-left: 25px;
 
-header figure:nth-of-type(2) {
-  float: left;
-  margin-left: 25px;
-}
-
-header figure:nth-of-type(2) img {
-  height: 60px;
+    img {
+      height: 60px;
+    }
+  }
 }
 
 /* Hauptnavigation Start */
@@ -66,14 +64,6 @@ header figure:nth-of-type(2) img {
 nav {
   background-color: #000000c8;
   height: 60px;
-
-  /*   ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 5px 10px;
-    font-size: 1.5em;
-    font-weight: bold;
-  } */
 
   ul {
     li {
