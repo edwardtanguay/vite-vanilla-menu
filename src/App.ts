@@ -4,7 +4,7 @@ import { getMenu, getCurrentPage } from './Router';
 document.querySelector<HTMLDivElement>('#app')!.innerHTML =/* html */`
 <header>
     <figure>
-        <a href="index.html">
+        <a href="willkommen">
             <img src="./images/header.png" alt="Lego bauen" title="Lego bauen">
         </a>
     </figure>
@@ -14,7 +14,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML =/* html */`
     </section>
 
     <figure>
-        <a href="index.html">
+        <a href="willkommen">
             <img src="./images/logo.png" alt="Logo" title="logo">
         </a>
     </figure>
@@ -25,4 +25,13 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML =/* html */`
 <main>
 	${getCurrentPage()}
 </main>
+
+<footer>
+    <section>
+        <p>&#169; 2023</p>
+    </section>
+    <section>
+        <a href="impressum">Impressum</a>
+    </section>
+</footer>
 `;

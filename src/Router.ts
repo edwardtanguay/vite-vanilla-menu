@@ -6,8 +6,9 @@ import { PageAlternativen } from "./pages/PageAlternativen";
 import { PageBlog } from "./pages/PageBlog";
 import { PageLego } from "./pages/PageLego";
 import { PageProjekte } from "./pages/PageProjekte";
+import { PageImpressum } from "./pages/PageImpressum";
 
-const pageNames = ["Willkommen", "Lego", "Alternativen", "Projekte", "Blog"];
+const pageNames = ["Willkommen", "Lego", "Alternativen", "Projekte", "Blog", "Impressum"];
 
 const currentPageIdCode = getSmartCurrentPageId();
 
@@ -24,6 +25,8 @@ export const getCurrentPage = () => {
       return PageProjekte();
     case "blog":
       return PageBlog();
+      case "impressum":
+        return PageImpressum();
     default:
       return Page404();
   }
@@ -47,7 +50,7 @@ export const getMenu = () => {
   return /*html*/ `
 	<nav class="menu">
 		<ul>
-			${pageNames
+			${pageNames.filter(m => m !== 'Impressum')
         .map(
           (pageName) =>
             `<li><a href="${getPageIdCode(pageName)}"${getMenuClass(
