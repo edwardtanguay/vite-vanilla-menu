@@ -10,7 +10,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML =/* html */`
     </figure>
 
     <section>
-        <h1>1001 Klemmbausteine</h1>
+        <h1>1001 Klemmbausteine v2</h1>
     </section>
 
     <figure>
