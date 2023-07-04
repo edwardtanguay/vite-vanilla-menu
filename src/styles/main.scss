@@ -3,274 +3,267 @@
     src: url(../fonts/delta.ttf);
 } */
 
-
-
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* allgemeines Layout */
 
 body {
-    background-image: url(./images/lego_dorf.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    font-family: 'Calibri', 'Trebuchet MS', 'Gill Sans', 'Gill Sans MT', sans-serif
+  background-image: url(./images/lego_dorf.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: "Calibri", "Trebuchet MS", "Gill Sans", "Gill Sans MT",
+    sans-serif;
 }
 
-
-
-
-header, main, footer{
-    width: 80%;
-    margin: auto;
-    background-color: #ffffffcf;
+header,
+main,
+footer {
+  width: 80%;
+  margin: auto;
+  background-color: #ffffffcf;
 }
-
 
 /* Header */
 
 header {
-    margin-top: 50px;
-    padding-top: 15px;
+  margin-top: 50px;
+  padding-top: 15px;
 }
 
-header section, header figure:nth-of-type(1) {
-    text-align: center;
-    margin-bottom: 0;
+header section,
+header figure:nth-of-type(1) {
+  text-align: center;
+  margin-bottom: 0;
 }
 
 header figure:nth-of-type(1) img {
-    height: 200px;
+  height: 200px;
 }
 
-header  h1 {
-    font-size: 3.5em;
-    font-family: 'delta';
+header h1 {
+  font-size: 3.5em;
+  font-family: "delta";
 }
 
 /* logo */
 
 header figure:nth-of-type(2) {
-    float: left;
-    margin-left: 25px;
+  float: left;
+  margin-left: 25px;
 }
 
 header figure:nth-of-type(2) img {
-    height: 60px;
+  height: 60px;
 }
-
 
 /* Hauptnavigation Start */
 
 nav {
-    background-color: #000000c8;
-    height: 60px;
+  background-color: #000000c8;
+  height: 60px;
 }
 
 nav ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 5px 10px;
-    font-size: 1.5em;
-    font-weight: bold;
+  list-style: none;
+  display: inline-block;
+  margin: 5px 10px;
+  font-size: 1.5em;
+  font-weight: bold;
 }
- 
+
 nav a {
-    text-decoration: none;
-    color: #000000;
+  text-decoration: none;
+  color: #000000;
 }
 
 nav li {
-    padding: 6px;
-    border: 3px solid #000000;
-} 
+  padding: 6px;
+  border: 3px solid #000000;
+}
 
 nav li:hover {
-    filter: hue-rotate(120deg);
+  filter: hue-rotate(120deg);
 }
 
 nav li:nth-of-type(1) {
-    background-color: #fffb00;
+  background-color: #fffb00;
 }
 
 nav li:nth-of-type(2) {
-    background-color: #ff0000;
-    
+  background-color: #ff0000;
 }
 
 nav li:nth-of-type(3) {
-    background-color: #0004ff;
+  background-color: #0004ff;
 }
 
 nav li:nth-of-type(4) {
-    background-color: #00ca22;
+  background-color: #00ca22;
 }
 
 /* main-Bereich*/
 
 main {
-    padding: 20px 30px;
-    font-size: 1.1em;
+  padding: 20px 30px;
+  font-size: 1.1em;
 }
 
 /* Navigation Alternativen */
 nav2 ul li {
-    font-size: 1.3em;
-    margin: 0 20px 50px 0;
-    font-weight: bold;
-    list-style: none;
-    display:inline-block;
+  font-size: 1.3em;
+  margin: 0 20px 50px 0;
+  font-weight: bold;
+  list-style: none;
+  display: inline-block;
 }
 
 nav2 a {
-    text-decoration: none;
-    color: #000;
+  text-decoration: none;
+  color: #000;
 }
-
 
 nav2 li {
-    padding: 5px;
-    border: 3px solid #000;
-} 
-
-nav2 li:hover {
-    filter: hue-rotate(120deg);
+  padding: 5px;
+  border: 3px solid #000;
 }
 
+nav2 li:hover {
+  filter: hue-rotate(120deg);
+}
 
 nav2 li:nth-of-type(1) {
-    background-color: #fffb00;
+  background-color: #fffb00;
 }
 
 nav2 li:nth-of-type(2) {
-    background-color: #ff0000;
-    
+  background-color: #ff0000;
 }
 
 nav2 li:nth-of-type(3) {
-    background-color: #0004ff;
+  background-color: #0004ff;
 }
 
 /* Text- und Bildformatierungen für den main-Bereich */
 
 h2 {
-    margin-bottom: 20px;
-    font-size: 1.5em;
+  margin-bottom: 20px;
+  font-size: 1.5em;
 }
 
 h3 {
-    font-size: 1.2em;
-    margin-bottom: 20px;
+  font-size: 1.2em;
+  margin-bottom: 20px;
 }
 
-p, figure {
-    margin-bottom: 15px;
+p,
+figure {
+  margin-bottom: 15px;
 }
 
-
-article, section {
-    margin-bottom: 50px;
+article,
+section {
+  margin-bottom: 50px;
 }
 
-a { 
-    text-decoration: none;
-    padding: 10px 0;
-    color: #000;
+a {
+  text-decoration: none;
+  padding: 10px 0;
+  color: #000;
 }
 
 span {
-    font-weight: bold;
+  font-weight: bold;
 }
 
-article img, section img {
-    height: 300px;
-    float: left;
-    margin-right: 10px;
+article img,
+section img {
+  height: 300px;
+  float: left;
+  margin-right: 10px;
 }
 
 /* Vorschau auf der Startseite */
 
-.start  {
-    text-align: center;
-    display: inline-block;
-    width: 30%;
-    height: 400px;
-    padding: 5px;
-    margin: 15px;
-    vertical-align: top;
-    border: 3px solid #000;
+.start {
+  text-align: center;
+  display: inline-block;
+  width: 30%;
+  height: 400px;
+  padding: 5px;
+  margin: 15px;
+  vertical-align: top;
+  border: 3px solid #000;
 }
 
 .start:nth-of-type(1):hover {
-    background-color: #fffb00c2;
+  background-color: #fffb00c2;
 }
 
 .start:nth-of-type(2):hover {
-    background-color: #ff0000c2;
+  background-color: #ff0000c2;
 }
 
 .start:nth-of-type(3):hover {
-    background-color: #0004ffc2;
+  background-color: #0004ffc2;
 }
 
 .start img {
-    height: 200px;
-    float: none;
+  height: 200px;
+  float: none;
 }
-
 
 /* nach-Oben Button */
 
 .fixed-top {
-    bottom: -5%;
-    right: 12%;
-    float: right;
-    position: fixed;
-
+  bottom: -5%;
+  right: 12%;
+  float: right;
+  position: fixed;
 }
 
 .fixed-top a {
-    text-decoration: none;
-    padding: 10px;
-    color: #000;
-    font-weight: bold;
-    background-color: #fffb00;
-    border: 2px solid #000;
+  text-decoration: none;
+  padding: 10px;
+  color: #000;
+  font-weight: bold;
+  background-color: #fffb00;
+  border: 2px solid #000;
 }
 
 /* Textgestaltung der Projekt-Seite */
 
-#eispalast figure {
+#eispalast {
+  figure {
     display: inline-block;
-}
+  }
 
-#eispalast img {
+  img {
     height: 250px;
-}
-
-#eispalast img:hover {
-    transition: transform 0.3s;
-    transform: scale(2.0, 2.0);
+    &:hover {
+      transition: transform 0.3s;
+      transform: scale(2, 2);
+    }
+  }
 }
 
 /* footer section */
 
-
 footer {
-    background-color: #000000c8;
+  background-color: #000000c8;
+  color: #fff;
+  height: 80px;
+
+  section {
+    display: inline-block;
+    padding: 30px;
+  }
+
+  a {
     color: #fff;
-    height: 80px;
-
-    section {
-        display: inline-block;
-        padding: 30px;
-    }
-
-    a {
-        color: #fff;
-    }
+  }
 }
