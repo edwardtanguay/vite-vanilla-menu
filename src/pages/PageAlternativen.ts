@@ -69,10 +69,10 @@ export const PageAlternativen = () => {
 
 <p>Erstmals kam dann mit der Marke GoBricks ein Player in den Markt, der sich selber hohe Qualitätsansprüche gesetzt hatte. Mit der eigenen Marke Mould King, die in allen Bereichen interessante Sets im Angebot hatte und hat, war auch schnell ein gewisser Bekanntheitsgrad erreicht.</p>
 
-<p><span>Wer oder was ist GoBricks?</span></p>
+<p><strong>Wer oder was ist GoBricks?</strong></p>
 <p>Hinter GoBricks steckt die Shantou Gaodes Precision Technology Co., Ltd. und wurde 2017 gegründet. Es befindet sich in der Industriezone Dutou, Bezirk Chenghai, Stadt Shantou, Provinz Guangdong, „Chinese Toy Gift City“.</p>
 
-<p><span>Wer nutzt nun Steine von GoBricks und in welchem Umfang?</span></p>
+<p><strong>Wer nutzt nun Steine von GoBricks und in welchem Umfang?</strong></p>
 <p>Mould King, Sembo, Super 18K, Rael und Xinyu verwendeten ausschließlich Gobricks für über 90 % ihres Teilebedarfs. Zu beachten ist dabei, dass Decool Gobricks über seine Untermarke JiSi (teilweise) verwendet. Im Moment ist die Belieferung von Großkunden wie Mold King das Hauptgeschäft von Gobricks.</p>
 
 <p><a href="https://brickreview.de/?p=78"target="_blank">&#10149; Der ganze Artikel auf brickreview.de</a></p>

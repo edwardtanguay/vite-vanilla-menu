@@ -39,7 +39,7 @@ export const PageProjekte = () => {
 <figure>
 	<img src="./images/eispalast_6.jpg" alt="Eispalast bespielt" title="Eispalast bespielt">
 </figure>
-<p><span>Fazit:</span></p>
+<p><strong>Fazit:</strong></p>
 <p>Ein bomben Projekt, zu einem relativ günstigen Preis.</p>
 
 </article>

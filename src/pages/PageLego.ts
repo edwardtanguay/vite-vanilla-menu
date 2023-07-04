@@ -26,7 +26,7 @@ export const PageLego = () => {
 
 
 <section>
-    <p><span>Für weitere Informationen und Anregungen:</span></p>
+    <p><strong>Für weitere Informationen und Anregungen:</strong></p>
     <p><a href="https://www.lego.com/de-de">&#10149; LEGO</a></p>
     <p><a href="https://de.wikipedia.org/wiki/Lego">&#10149; Wikipedia</a></p>
 </section>
