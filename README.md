@@ -1,35 +1,19 @@
-# Vite Vanilla Site with Menu
+# Vite Vanilla site with TypeScript backend and frontend in same folder with  CLI and  unit testing
 
-This is a multi-page HTML/CSS/JavaScript site created with Vite Vanilla option. It has Typescript and Sass already installed. I created a simple Router which makes it possible to add pages easily (a few changes in `Router.ts` and then add e.g. `pages/PageReports.ts` which looks similar to a React component.
+This is a multi-page HTML/CSS/JavaScript site created with Vite Vanilla option. In the project there is a backend and a frontent, both written in TypeScript, which can be started with one `npm run dev` command. There is a `share` directory which has functions in TypeScript which both front and backend use. These functions are unit tested with Vitest (basically Jest for TypeScript). There is also a CLI command which can create new example items for the website. This is a good starter project for a local app where all data is produced on the backend and delivers the data to the frontend, and where you can make CLI commands to automate any repetitive tasks. This is also an actual site that I use to create and store HTML/CSS/JavaScript examples for e.g. animations, interactive components, etc. for JavaScript-DOM sites.
 
-![grafik](https://starters.tanguay.eu/images/starters/darkViteVanillaMenu.png)
-
-![grafik](https://github.com/edwardtanguay/vite-vanilla-menu/assets/446574/917ec388-fa98-480a-98fb-4f1ab87997e2)
-
-## Updates
-
-### 2023-06-14
-
-- fixed bug: default page now works
-
-### 2023-06-07
-
-- router now loads a 404 page (`Page404.ts`)
-
-### 2023-06-06
-
-- handles spaces and special (German) characters in page names
-- `nav` moved into menu component
-- `<div class="page ...">` wrappers on all pages
+![grafik](https://starters.tanguay.eu/images/starters/viteVanillaTestingBackendFrontendTypeScript.png)
 
 ## features
 
 - built with **Vite** (Vanilla/TypeScript)
 - **multi-page** menu, editable in `Router.ts`
 - dark layout
-- TypeScript
-- one **Sass** file
-- _good for developers who don't yet have React skills but who want to make multi-page sites with a modern React-like framework that has npm packages, can load JSON files from the file system, and you can easily publish at Vercel, etc._
+- TypeScript in both backend and frontend
+- start backend and frontend with one command: `npm run dev`
+- frontend uses **Sass**
+- testing with Vitest: `npm run test` and `npm run testcov` (coverage)
+- CLI which runs a script on the backend that creates new components: `npm run ce`
 
 ## install
 
@@ -38,7 +22,15 @@ This is a multi-page HTML/CSS/JavaScript site created with Vite Vanilla option. 
 - open VSCode in that directory (`code .`)
 - `npm i`
 - `npm run dev`
-- `git init -b dev`
+
+## testing
+
+- `npm run test` (run all unit tests)
+- `npm run testcov` (show test coverage)
+
+## CLI
+
+- `npm run ce`
 
 ## more starters, templates and frameworks
 
